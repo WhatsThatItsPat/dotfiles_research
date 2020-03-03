@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+
+- create:
+    - ~/Developer
+    - ~/Work
+
+#- shell:
+#  - [git submodule update --init --recursive, Installing submodules]
