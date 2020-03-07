@@ -14,12 +14,6 @@
 #    - ~/Work
 
 - shell:
-#  - [git submodule update --init --recursive, Installing submodules]
-  - command: echo "hey you guys"
-    stdout: true
-  - command: sleep 2
-    stdout: true
-    stderr: true
-  - command: ./test.sh
+  - command: ./setup-homebrew.sh
     stdout: true
     stderr: true
