@@ -1,7 +1,9 @@
 echo 'Hello a 3rd time from .zshrc'
 
 # Create aliases
-alias ls='ls -lAFh'
+# alias ls='ls -lAFh'
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
 
 # Customize the prompt
 prompt='
