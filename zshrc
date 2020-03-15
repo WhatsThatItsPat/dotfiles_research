@@ -18,3 +18,6 @@ prompt='
 # Use ZSH plugins
 
 
+# We'll see? Bonus stuff...
+# should this be in zshenv or something?
+export HOMEBREW_CASK_OPTS="--no-quarantine"
