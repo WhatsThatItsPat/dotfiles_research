@@ -1,4 +1,4 @@
-echo 'Hello a 3rd time from .zshrc'
+echo 'Hello from .zshrc'
 
 # Create aliases
 # alias ls='ls -lAFh'
@@ -15,6 +15,10 @@ prompt='
 
 
 # Write handy functions
+# Create a new directory and enter it
+function mkcd() {
+  mkdir -p "$@" && cd "$_";
+}
 
 
 # Use ZSH plugins
