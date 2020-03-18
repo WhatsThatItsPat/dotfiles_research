@@ -2,3 +2,7 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "bat-extras"]
+	path = bat-extras
+	url = https://github.com/eth-p/bat-extras
+	ignore = dirty

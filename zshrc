@@ -1,4 +1,7 @@
 echo 'Hello from .zshrc'
+# Do I want to name these with the dot, instead
+# of following the default dotbot way? Setting
+# file associations for VS Code, bat, etc. is a pain.
 
 # Create aliases
 # alias ls='ls -lAFh'
@@ -20,6 +23,10 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
+function exaf() {
+  exa $(find "$1" -name "*$2")
+}
+
 
 # Use ZSH plugins
 
@@ -27,3 +34,12 @@ function mkcd() {
 # We'll see? Bonus stuff...
 # should this be in zshenv or something?
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+# TODO look into this
+export TIME_STYLE=long-iso
+
+
+# Bonus?
+# Get some syntax highlighing for man pages using bat
+# https://github.com/sharkdp/bat#man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
