@@ -8,6 +8,8 @@ echo 'Hello from .zshrc'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 
+alias trail='<<<${(F)path}'
+
 # Customize the prompt
 prompt='
 %1~ %L %# '
