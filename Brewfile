@@ -11,6 +11,8 @@ brew "git"
 brew "httpie"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# UNIX shell (command interpreter)
+brew "zsh"
 cask "alfred"
 cask "brave-browser"
 cask "dropbox"
