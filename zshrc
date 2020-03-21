@@ -33,9 +33,10 @@ function exaf() {
 # Use ZSH plugins
 
 
-# We'll see? Bonus stuff...
+# We'll see? Bonus stuff... SURPRISE
 # should this be in zshenv or something?
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 # TODO look into this
 export TIME_STYLE=long-iso
