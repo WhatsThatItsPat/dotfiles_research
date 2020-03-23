@@ -3,6 +3,14 @@ echo 'Hello from .zshrc'
 # of following the default dotbot way? Setting
 # file associations for VS Code, bat, etc. is a pain.
 
+
+# Settings and other Surprises
+# should this be in zshenv or something?
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+
+
 # Create aliases
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
@@ -15,8 +23,8 @@ prompt='
 %1~ %L %# '
 
 # Add locations to the $PATH variable
-  # Add Visual Studio Code (code)
-  export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:$N_PREFIX/bin"
 
 
 # Write handy functions
@@ -33,10 +41,6 @@ function exaf() {
 # Use ZSH plugins
 
 
-# We'll see? Bonus stuff... SURPRISE
-# should this be in zshenv or something?
-export HOMEBREW_CASK_OPTS="--no-quarantine"
-export NULLCMD=bat
 
 # TODO look into this
 export TIME_STYLE=long-iso
