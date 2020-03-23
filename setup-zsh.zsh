@@ -31,3 +31,12 @@ else
   # sudo ln -sfv /usr/local/bin/zsh /private/var/select/sh
 fi
 
+
+
+
+# Look into later:
+# /usr/local/Cellar/zsh/5.8/share/zsh/functions
+
+# These are aliased to 5.8. What where they before
+# I updated with Homebrew?
+# /usr/local/share/zsh/functions
