@@ -28,11 +28,13 @@ alias trail='<<<${(F)path}'
 prompt='
 %1~ %L %# '
 
-# Add locations to the $PATH variable
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-# export PATH="$PATH:$N_PREFIX/bin"
-export PATH="$N_PREFIX/bin:$PATH"
-
+# Add locations to the $path variable
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 # Write handy functions
 # Create a new directory and enter it
