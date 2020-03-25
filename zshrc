@@ -1,14 +1,20 @@
 echo 'Hello from .zshrc'
+
+# for testing the Inherit Env stuff
+# echo "Path?: $PATH"
+
 # Do I want to name these with the dot, instead
 # of following the default dotbot way? Setting
 # file associations for VS Code, bat, etc. is a pain.
 
 
-# Settings and other Surprises
+# Set Environment Variables (and other Surprises)
 # should this be in zshenv or something?
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
 
 
 # Create aliases
@@ -24,7 +30,8 @@ prompt='
 
 # Add locations to the $PATH variable
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="$PATH:$N_PREFIX/bin"
+# export PATH="$PATH:$N_PREFIX/bin"
+export PATH="$N_PREFIX/bin:$PATH"
 
 
 # Write handy functions
