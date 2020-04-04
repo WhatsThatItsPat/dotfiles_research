@@ -7,6 +7,12 @@ echo 'Hello from .zshrc'
 # of following the default dotbot way? Setting
 # file associations for VS Code, bat, etc. is a pain.
 
+# Adjust History Settings
+setopt histNoStore
+
+
+# Set ZSH Options
+
 
 # Set Environment Variables (and other Surprises)
 # should this be in zshenv or something?
