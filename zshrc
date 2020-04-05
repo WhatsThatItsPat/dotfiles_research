@@ -10,6 +10,7 @@ echo 'Hello from .zshrc'
 # Adjust History Settings
 setopt histNoStore
 setopt extendedHistory
+setopt histFindNoDups
 
 
 # Set ZSH Options
