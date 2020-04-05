@@ -11,6 +11,7 @@ echo 'Hello from .zshrc'
 setopt histNoStore
 setopt extendedHistory
 setopt histFindNoDups
+setopt histSaveNoDups
 
 
 # Set ZSH Options
