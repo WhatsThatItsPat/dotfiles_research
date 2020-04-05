@@ -17,7 +17,8 @@ setopt extendedHistory
 # setopt histFindNoDups
 # setopt histSaveNoDups
 # setopt histExpireDupsFirst
-setopt histIgnoreDups
+# setopt histIgnoreDups
+setopt histIgnoreAllDups
 
 
 # Set ZSH Options
