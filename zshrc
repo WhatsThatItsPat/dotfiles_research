@@ -8,6 +8,10 @@ echo 'Hello from .zshrc'
 # file associations for VS Code, bat, etc. is a pain.
 
 # Adjust History Settings
+[ -z $HISTFILE ] && HISTFILE="$HOME/.zsh_history"
+HISTSIZE=2000
+SAVEHIST=1000
+
 setopt histNoStore
 setopt extendedHistory
 setopt histFindNoDups
