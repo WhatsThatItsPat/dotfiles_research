@@ -22,8 +22,10 @@ setopt extendedHistory
 setopt histIgnoreAllDups
 
 # History Appending & Sharing Options
-# appendHistory is the default, so we don't really need to set it.
-setopt appendHistory
+# Explicitly turning off appendHistory (though I imagine
+# incAppendHistory will just override it)
+unsetopt appendHistory
+# setopt incAppendHistory
 
 
 # Set ZSH Options
