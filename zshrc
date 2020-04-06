@@ -26,6 +26,7 @@ setopt histIgnoreAllDups
 # incAppendHistory will just override it)
 unsetopt appendHistory
 # setopt incAppendHistory
+setopt incAppendHistoryTime
 
 
 # Set ZSH Options
