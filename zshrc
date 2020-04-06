@@ -27,6 +27,7 @@ setopt histIgnoreAllDups
 unsetopt appendHistory
 # setopt incAppendHistory
 setopt incAppendHistoryTime
+# setopt shareHistory
 
 
 # Set ZSH Options
@@ -47,6 +48,8 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
+# Load History into shell (shareHistory alternative)
+alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 
 # Customize the prompt
 prompt='
