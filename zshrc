@@ -9,10 +9,11 @@ echo 'Hello from .zshrc'
 
 # Adjust History Settings
 [ -z $HISTFILE ] && HISTFILE="$HOME/.zsh_history"
-HISTSIZE=10
-SAVEHIST=10
+HISTSIZE=5000
+SAVEHIST=4000
 setopt histNoStore
 setopt extendedHistory
+
 # History Duplication Options
 # setopt histFindNoDups
 # setopt histSaveNoDups
