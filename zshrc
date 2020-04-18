@@ -69,12 +69,13 @@ function mkcd() {
 
 # ...and Other Surprises
 
-
 # Change Key Bindings
 bindkey "^[[A" up-line-or-search
 bindkey "^[[B" down-line-or-search
 
 
+# Add "zstyles" for Completions
+zstyle ':completion:*:*:*:*:*' menu select
 # Load "New" Completion System
 autoload -Uz compinit && compinit
 
