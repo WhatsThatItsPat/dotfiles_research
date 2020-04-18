@@ -27,21 +27,9 @@ HISTSIZE=5000
 SAVEHIST=4000
 setopt histNoStore
 setopt extendedHistory
-
-# History Duplication Options
-# setopt histFindNoDups
-# setopt histSaveNoDups
-# setopt histExpireDupsFirst
-# setopt histIgnoreDups
 setopt histIgnoreAllDups
-
-# History Appending & Sharing Options
-# Explicitly turning off appendHistory (though I imagine
-# incAppendHistory will just override it)
-unsetopt appendHistory
-# setopt incAppendHistory
+unsetopt appendHistory # explicit and unnecessary
 setopt incAppendHistoryTime
-# setopt shareHistory
 
 
 # Create Aliases
