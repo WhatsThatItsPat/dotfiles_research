@@ -34,6 +34,7 @@ setopt incAppendHistoryTime
 # Completion / Menu / Directory / etc. Options
 # autoMenu & autoList are on by default
 setopt autoCd
+setopt globDots
 setopt menuComplete
 
 
