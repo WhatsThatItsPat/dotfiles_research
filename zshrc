@@ -31,6 +31,10 @@ setopt histIgnoreAllDups
 unsetopt appendHistory # explicit and unnecessary
 setopt incAppendHistoryTime
 
+# Completion / Menu / Directory / etc. Options
+# autoMenu & autoList are on by default
+setopt menuComplete
+
 
 # Create Aliases
 # alias ls='ls -lAFh'
