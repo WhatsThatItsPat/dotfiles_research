@@ -1,13 +1,27 @@
 echo 'Hello from .zshrc'
 
-# for testing the Inherit Env stuff
-# echo "Path?: $PATH"
+# Set Environment Variables (and other Surprises)
+# should HOMEBREW_CASK_OPTS be in zshenv or something?
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
+
+# TODO look into this
+export TIME_STYLE=long-iso
+
+# Bonus?
+# Get some syntax highlighing for man pages using bat
+# https://github.com/sharkdp/bat#man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 
 # Do I want to name these with the dot, instead
 # of following the default dotbot way? Setting
 # file associations for VS Code, bat, etc. is a pain.
 
-# Adjust History Settings
+
+# Adjust History Variables & Options
 [ -z $HISTFILE ] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=5000
 SAVEHIST=4000
@@ -30,19 +44,7 @@ setopt incAppendHistoryTime
 # setopt shareHistory
 
 
-# Set ZSH Options
-
-
-# Set Environment Variables (and other Surprises)
-# should this be in zshenv or something?
-export HOMEBREW_CASK_OPTS="--no-quarantine"
-
-export NULLCMD=bat
-export N_PREFIX="$HOME/.n"
-export PREFIX="$N_PREFIX"
-
-
-# Create aliases
+# Create Aliases
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
@@ -51,11 +53,11 @@ alias trail='<<<${(F)path}'
 # Load History into shell (shareHistory alternative)
 alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 
-# Customize the prompt
+# Customize the Prompt
 prompt='
 %1~ %L %# '
 
-# Add locations to the $path variable
+# Add Locations to the $path Variable
 typeset -U path
 path=(
   "$N_PREFIX/bin"
@@ -63,26 +65,10 @@ path=(
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
-# Write handy functions
+# Write Handy Functions
 # Create a new directory and enter it
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
-function exaf() {
-  exa $(find "$1" -name "*$2")
-}
-
-
 # Use ZSH plugins
-
-
-
-# TODO look into this
-export TIME_STYLE=long-iso
-
-
-# Bonus?
-# Get some syntax highlighing for man pages using bat
-# https://github.com/sharkdp/bat#man
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
