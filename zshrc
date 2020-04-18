@@ -76,6 +76,9 @@ bindkey "^[[B" down-line-or-search
 
 # Add "zstyles" for Completions
 zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+
 # Load "New" Completion System
 autoload -Uz compinit && compinit
 
