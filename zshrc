@@ -67,6 +67,9 @@ function mkcd() {
 }
 
 # Use ZSH plugins
+source <(antibody init)
+antibody bundle < "$DOTFILES/antibody_plugins"
+
 
 
 # ...and Other Surprises
