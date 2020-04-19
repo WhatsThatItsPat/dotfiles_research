@@ -43,6 +43,7 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
+alias ftrail='<<<${(F)fpath}'
 # Load History into shell (shareHistory alternative)
 alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 
