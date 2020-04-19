@@ -76,9 +76,8 @@ antibody bundle < "$DOTFILES/antibody_plugins"
 # ...and Other Surprises
 
 # Change Key Bindings
-bindkey "^[[A" up-line-or-search
-bindkey "^[[B" down-line-or-search
-
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Add "zstyles" for Completions
 zstyle ':completion:*:*:*:*:*' menu select
