@@ -7,6 +7,7 @@ export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 DOTFILES="$HOME/.dotfiles"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # TODO look into this
 export TIME_STYLE=long-iso
