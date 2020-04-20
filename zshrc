@@ -6,6 +6,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
+DOTFILES="$HOME/.dotfiles"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # TODO look into this
 export TIME_STYLE=long-iso
@@ -66,19 +68,21 @@ function mkcd() {
 }
 
 # Use ZSH plugins
+source <(antibody init)
+antibody bundle < "$DOTFILES/antibody_plugins"
+
 
 
 # ...and Other Surprises
 
 # Change Key Bindings
-bindkey "^[[A" up-line-or-search
-bindkey "^[[B" down-line-or-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
-
-# Add "zstyles" for Completions
+# Add "zstyles" for Completions & Other Things
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
+zstyle ":plugin:history-search-multi-word" clear-on-cancel "yes"
 
 # Load "New" Completion System
 autoload -Uz compinit && compinit
