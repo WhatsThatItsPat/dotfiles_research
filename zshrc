@@ -1,4 +1,16 @@
 echo 'Hello from .zshrc'
+# source 'playground/test.zsh'
+# echo "what's this $0"
+# echo "dirname?: $(dirname $0)"
+# https://unix.stackexchange.com/a/115431/392297
+# these are interesting...it knows it's in
+# .dotfiles...I was worried it would be ~
+# because of the symlink.
+echo ${0:a}
+echo ${0:a:h}
+# I think I did something like this before...
+# https://stackoverflow.com/a/23259585/1341838
+echo ${BASH_SOURCE[0]:-${(%):-%x}}
 
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
