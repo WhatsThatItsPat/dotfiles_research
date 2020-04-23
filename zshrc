@@ -54,6 +54,8 @@ alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 # prompt='
 # %1~ %L %# '
 
+source "$DOTFILES/spaceship_shlvl.zsh"
+
 SPACESHIP_CHAR_SYMBOL="❯ "
 # SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_TIME_SHOW=true
@@ -71,6 +73,7 @@ SPACESHIP_PROMPT_ORDER=(
   exec_time     # Execution time
   line_sep      # Line break
   jobs          # Background jobs indicator
+  shlvl         # Custom section from spaceship_shlvl.zsh
   char          # Prompt character
 )
 
