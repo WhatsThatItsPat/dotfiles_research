@@ -54,6 +54,31 @@ alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 # prompt='
 # %1~ %L %# '
 
+SPACESHIP_CHAR_SYMBOL="❯ "
+# SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_EXEC_TIME_ELAPSED=0
+SPACESHIP_BATTERY_SHOW=always
+SPACESHIP_EXIT_CODE_SHOW=true
+
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  node          # Node.js section
+  exec_time     # Execution time
+  line_sep      # Line break
+  jobs          # Background jobs indicator
+  char          # Prompt character
+)
+
+SPACESHIP_RPROMPT_ORDER=(
+  exit_code
+  battery
+  time
+)
 
 
 # Add Locations to the $path Variable
