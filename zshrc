@@ -54,6 +54,8 @@ alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 # prompt='
 # %1~ %L %# '
 
+# Fake change to close #7
+
 source "$DOTFILES/spaceship_shlvl.zsh"
 
 SPACESHIP_CHAR_SYMBOL="❯ "
