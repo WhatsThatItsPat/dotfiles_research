@@ -49,9 +49,12 @@ alias ftrail='<<<${(F)fpath}'
 # Load History into shell (shareHistory alternative)
 alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 
+
 # Customize the Prompt
-prompt='
-%1~ %L %# '
+# prompt='
+# %1~ %L %# '
+
+
 
 # Add Locations to the $path Variable
 typeset -U path
