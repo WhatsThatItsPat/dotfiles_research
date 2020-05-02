@@ -1,5 +1,7 @@
 echo 'Hello from .zshrc'
 
+# just to try relating a hash with a terminal commit.
+
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
 export HOMEBREW_CASK_OPTS="--no-quarantine"
