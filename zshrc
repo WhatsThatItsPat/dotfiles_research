@@ -53,8 +53,9 @@ alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 
 
 # Customize the Prompt
-# prompt='
+# PROMPT='
 # %1~ %L %# '
+# RPROMPT='%*'
 
 # Fake change to close #7
 
