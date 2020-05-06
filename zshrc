@@ -11,6 +11,9 @@ export PREFIX="$N_PREFIX"
 DOTFILES="$HOME/.dotfiles"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
+# Probably won't do this, just exploring alternatives
+# export BAT_CONFIG_PATH="$DOTFILES/bat.conf"
+
 # TODO look into this
 export TIME_STYLE=long-iso
 
