@@ -57,8 +57,12 @@ alias lh='fc -RI; echo "history loaded, now showing..."; history;'
 # %1~ %L %# '
 # RPROMPT='%*'
 
-# Fake change to close #7
 
+# this works in VS Code integrated terminal
+# source "spaceship_shlvl.zsh"
+# this works in Terminal app
+# source ".dotfiles/spaceship_shlvl.zsh"
+# this works in both
 source "$DOTFILES/spaceship_shlvl.zsh"
 
 SPACESHIP_CHAR_SYMBOL="❯ "
@@ -105,6 +109,11 @@ function mkcd() {
 
 # Use ZSH plugins
 source <(antibody init)
+# this works in VS Code integrated terminal
+# antibody bundle < "antibody_plugins"
+# this works in Terminal app
+# antibody bundle < ".dotfiles/antibody_plugins"
+# this works in both
 antibody bundle < "$DOTFILES/antibody_plugins"
 
 
