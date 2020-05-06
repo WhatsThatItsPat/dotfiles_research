@@ -25,9 +25,9 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-    ~/.zshenv: zshenv
-    ~/.gitconfig: gitconfig
+    ~/.zshrc:
+    ~/.zshenv:
+    ~/.gitconfig:
 #    ~/.ssh/config: ssh/config
     ~/.config/bat/config:
       create: true
