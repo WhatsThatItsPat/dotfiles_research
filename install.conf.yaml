@@ -28,10 +28,9 @@
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
-#    ~/.ssh/config: ssh/config
-    ~/.config/bat/config:
+    ~/.config/bat:
       create: true
-      path: config/bat/config
+      path: config/bat
 
 #- create:
 #    - ~/Developer
