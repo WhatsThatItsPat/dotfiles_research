@@ -62,7 +62,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>74 105 1210 777 0 0 1792 1097 </string>
+	<string>168 136 1210 777 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -218,12 +218,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.019607843137254902</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.14509803921568629</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.019607843137254902</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -675,7 +679,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>ED299E37-A169-4CDA-AE3E-47F39F56B882</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNextAnnoyanceTime</key>
@@ -1411,5 +1415,9 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.3.9</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
