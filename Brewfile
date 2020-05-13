@@ -12,6 +12,8 @@ brew "bat"
 brew "exa"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Pager program similar to more
+brew "less"
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
