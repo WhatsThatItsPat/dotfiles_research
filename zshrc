@@ -48,7 +48,8 @@ setopt globDots
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
-alias bbd='brew bundle dump --force --describe'
+# alias bbd='brew bundle dump --force --describe'
+# alias bbd='cd ~/.dotfiles; brew bundle dump --force --describe; cd -;'
 alias trail='<<<${(F)path}'
 alias ftrail='<<<${(F)fpath}'
 # Load History into shell (shareHistory alternative)
@@ -109,6 +110,37 @@ path=(
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
+
+function bbd() {
+  local startingDirectory=$PWD;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Changing to $DOTFILES";
+    cd $DOTFILES;
+  fi
+
+  echo "Dumping Brewfile";
+  brew bundle dump --force --describe;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Returning to $startingDirectory";
+    cd $startingDirectory;
+  fi
+
+  # Old version. I think I like the new better.
+  # if [[ $startingDirectory == "$HOME/.dotfiles" ]]; then
+  #   brew bundle dump --force --describe;
+  # else
+  #   echo "Changing to ~/.dotfiles";
+  #   cd ~/.dotfiles;
+  #   echo "Dumping Brewfile";
+  #   brew bundle dump --force --describe;
+  #   echo "Returning to $startingDirectory";
+  #   cd $startingDirectory;
+  # fi
+
+}
+
 
 # Use ZSH plugins
 source <(antibody init)
