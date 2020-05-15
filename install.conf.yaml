@@ -2,33 +2,12 @@
     link:
       relink: true
 
-# I might do stuff pre-dotbot.
-# I could add the bat-extras as a gitmodule and then
-# use the dotbot linking to symlink the commands.
-# https://github.com/eth-p/bat-extras
-# But the install file should work. And I'm guessing
-# it'll end up on brew anyway.
-# - shell:
-#   - command: echo "before other dotbot stuff"
-#     stdout: true
-#     stderr: true
-#   - command: git submodule add https://github.com/eth-p/bat-extras
-#     stdout: true
-#     stderr: true
-#   - command: git config -f .gitmodules submodule.bat-extras.ignore dirty
-#     stdout: true
-#     stderr: true
-#   - command: bat-extras/build.sh --install --prefix=/usr/local --minify=none
-#     stdout: true
-#     stderr: true
-
 - clean: ['~']
 
 - link:
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
-    ~/.hyper.js:
     ~/.config/bat:
       create: true
       path: config/bat
