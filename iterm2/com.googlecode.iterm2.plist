@@ -64,7 +64,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>315 889 570 452 0 0 2560 1440 </string>
+	<string>229 250 1738 1100 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -222,12 +222,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.019607843137254902</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.14509803921568629</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.019607843137254902</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -679,7 +683,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F3BC3BE7-4EE1-4816-9628-5C84444B01C7</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>3</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNextAnnoyanceTime</key>
@@ -1413,6 +1417,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>~/.dotfiles/iterm2</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1431,5 +1437,9 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.3.10</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
