@@ -46,7 +46,6 @@ setopt globDots
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
-alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
 alias ftrail='<<<${(F)fpath}'
 # Load History into shell (shareHistory alternative)
@@ -108,6 +107,24 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
+# Only create Brewfile in .dotfiles directory
+function bbd() {
+  local startingDirectory=$PWD;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Changing to $DOTFILES";
+    cd $DOTFILES;
+  fi
+
+  echo "Dumping Brewfile";
+  brew bundle dump --force --describe;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Returning to $startingDirectory";
+    cd $startingDirectory;
+  fi
+
+}
 
 
 # Use ZSH plugins
