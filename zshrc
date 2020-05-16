@@ -1,7 +1,5 @@
 echo 'Hello from .zshrc'
 
-# just to try relating a hash with a terminal commit.
-
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
 export HOMEBREW_CASK_OPTS="--no-quarantine"
@@ -81,7 +79,7 @@ SPACESHIP_PROMPT_ORDER=(
   host          # Hostname section
   git           # Git section (git_branch + git_status)
   package       # Package version
-  node          # Node.js section
+#  node          # Node.js section
   exec_time     # Execution time
   line_sep      # Line break
   jobs          # Background jobs indicator
