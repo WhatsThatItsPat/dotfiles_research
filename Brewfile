@@ -14,6 +14,8 @@ brew "exa"
 brew "httpie"
 # Pager program similar to more
 brew "less"
+# Keep your Mac's application settings in sync
+brew "mackup"
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor

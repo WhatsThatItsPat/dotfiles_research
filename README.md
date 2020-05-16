@@ -13,3 +13,9 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm2"
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool true
 ```
+
+### Terminal App
+
+Need to do `mackup restore`.
+
+Terminal overwrites the symlink, so we have to do manual backups (if we really care about it).
