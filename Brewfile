@@ -39,3 +39,4 @@ cask "hyper"
 cask "iterm2"
 cask "visual-studio-code"
 cask "vlc"
+mas "Snappy", id: 512617038
