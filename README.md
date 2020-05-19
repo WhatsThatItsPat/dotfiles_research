@@ -19,3 +19,8 @@ defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -b
 Need to do `mackup restore`.
 
 Terminal overwrites the symlink, so we have to do manual backups (if we really care about it).
+
+
+### VS Code
+
+We will probably have to loop through extentions and use `code --install-extension`.
