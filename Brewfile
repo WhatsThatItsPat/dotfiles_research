@@ -17,6 +17,8 @@ brew "httpie"
 brew "less"
 # Keep your Mac's application settings in sync
 brew "mackup"
+# Mac App Store command-line interface
+brew "mas"
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
