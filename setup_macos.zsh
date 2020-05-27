@@ -2,6 +2,8 @@
 
 echo "\n~~~ Starting macOS Setup ~~~\n"
 
+osascript -e 'tell application "System Preferences" to quit'
+
 # Finder > View > Show Path Bar
 defaults write com.apple.finder ShowPathbar -bool true
 
