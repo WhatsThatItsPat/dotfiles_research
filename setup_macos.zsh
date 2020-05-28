@@ -20,8 +20,17 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-time-modifier -float 0.25
 defaults write com.apple.dock autohide-delay -float 0.1
 
+
+
+# System Preferences > Accessibility > Pointer Control > Mouse & Trackpad > Trackpad Options > Enable Dragging > Three Finger Drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+# Don't think this is necessary
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
+
+
 # Finish macOS Setup
 killall Finder
 killall Dock
-echo "Done with macOS setup."
+echo "Done with macOS setup. A logout or restart might be necessary."
 
