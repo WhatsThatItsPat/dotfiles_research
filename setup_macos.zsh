@@ -30,7 +30,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 
 # System Preferences > Keyboard > Shortcuts > Screenshots
 # I'd like to uncheck "Save picture of selected area as a file (cmd+shift+4)" so I can use that shortcut for Snappy.
-# couldn't figure out \`--dict-add\`
+# couldn't figure out `--dict-add`
 # Snappy settings are here:
 # ~/Library/Containers/ro.nextwave.Snappy/Data/Library/Preferences/ro.nextwave.Snappy.plist
 
