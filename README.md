@@ -25,6 +25,9 @@ Terminal overwrites the symlink, so we have to do manual backups (if we really c
 
 We will probably have to loop through extentions and use `code --install-extension`.
 
+
+## Manual Steps
+
 ### Snappy App
 
 Doesn't have a preferences dotfile in `~`, and is not supported by Mackup. Will have to manually set `cmd+shift+4` and turn off built in System Preferences > Keyboard > Shortcuts > Screenshots.
