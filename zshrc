@@ -2,10 +2,11 @@ echo 'Hello from .zshrc'
 
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
-export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
+export VSCODE_USER="$HOME/Library/Application Support/Code/User"
 DOTFILES="$HOME/.dotfiles"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 

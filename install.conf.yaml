@@ -10,10 +10,16 @@
     ~/.gitconfig:
     ~/.hyper.js:
     ~/.nanorc:
+    # the old terminal symlink
+    # $VSCODE_USER/settings.json: vscode/settings
+    # $VSCODE_USER/keybindings.json: vscode/keybindings.json
+    # $VSCODE_USER/snippets: vscode/snippets
+    # ~/.vscode/settings: vscode/settings
     ~/.mackup.cfg:
     ~/.config/bat:
       create: true
       path: config/bat
+    $VSCODE_USER/test: vscode/test
 
 #- create:
 #    - ~/Developer
