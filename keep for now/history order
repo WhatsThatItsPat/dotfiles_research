@@ -1,0 +1,59 @@
+# Original list
+APPEND_HISTORY <D>
+BANG_HIST (+K) <C> <Z>
+EXTENDED_HISTORY <C>
+HIST_ALLOW_CLOBBER
+HIST_BEEP <D>
+HIST_EXPIRE_DUPS_FIRST
+HIST_FCNTL_LOCK
+HIST_FIND_NO_DUPS
+HIST_IGNORE_ALL_DUPS
+HIST_IGNORE_DUPS (-h)
+HIST_IGNORE_SPACE (-g)
+HIST_LEX_WORDS
+HIST_NO_FUNCTIONS
+HIST_NO_STORE
+HIST_REDUCE_BLANKS
+HIST_SAVE_BY_COPY <D>
+HIST_SAVE_NO_DUPS
+HIST_VERIFY
+INC_APPEND_HISTORY
+INC_APPEND_HISTORY_TIME
+SHARE_HISTORY <K>
+hist file, size, save
+
+
+---
+
+# Maybe set from the get-go
+HIST_FCNTL_LOCK
+EXTENDED_HISTORY <C>
+HIST_NO_STORE
+
+# file vs memory? disk vs RAM?
+# session vs disk?
+HIST_FIND_NO_DUPS (searching? ram)
+HIST_SAVE_NO_DUPS (disk)
+HIST_EXPIRE_DUPS_FIRST (ram)
+HIST_IGNORE_DUPS (ram, should do this before all_dups)
+HIST_IGNORE_ALL_DUPS (ram)
+
+# turn off the default to make others easier to explain (don't think so anymore)
+# also need to lower savehist and histsize
+APPEND_HISTORY <D>
+INC_APPEND_HISTORY
+INC_APPEND_HISTORY_TIME
+SHARE_HISTORY <K>
+
+# Sure, but won't talk about
+HIST_BEEP <D>
+HIST_IGNORE_SPACE
+HIST_REDUCE_BLANKS
+HIST_SAVE_BY_COPY <D>
+
+# No idea
+HIST_VERIFY (!! to repeat a command? up arrow is just as fast)
+BANG_HIST (+K) <C> <Z>
+HIST_ALLOW_CLOBBER
+HIST_LEX_WORDS
+HIST_NO_FUNCTIONS

@@ -1,0 +1,10 @@
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+
+# zsh-syntax-highlighting wants to be last
+zdharma/fast-syntax-highlighting
+zdharma/history-search-multi-word
+
+# zsh-history-substring-search REALLY wants to be last
+# and made specific reference to zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search

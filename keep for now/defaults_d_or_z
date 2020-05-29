@@ -1,0 +1,84 @@
+aliases             d
+
+alwayslastprompt    d
+
+appendhistory       d
+
+autolist            d
+automenu            d
+
+autoparamkeys       d
+autoparamslash      d
+
+autoremoveslash     d
+
+badpattern          z
+banghist            z
+bareglobqual        z
+
+beep                d
+bgnice              z
+
+caseglob            d
+casematch           d
+
+checkjobs           z
+checkrunningjobs    z
+clobber             d
+combiningchars        on
+
+debugbeforecmd      d
+
+
+equals              z
+
+evallineno          z
+exec                d
+
+extendedhistory       on
+flowcontrol         d
+
+functionargzero     z
+glob                d
+globalexport        z
+globalrcs           d
+
+hashcmds            d
+hashdirs            d
+
+hashlistall         d
+
+histbeep            d
+
+histnostore           on
+
+histsavebycopy      d
+
+hup                 z
+
+incappendhistorytime  on
+interactive           on
+
+listambiguous       d
+listbeep            d
+
+listtypes           d
+
+login                 on
+
+monitor               on
+multibyte           d
+multifuncdef        z
+multios             z
+nomatch             z (nono)
+notify              z (nono)
+
+promptcr            d
+promptpercent       z
+promptsp            d
+
+rcs                 d
+
+shortloops          z
+
+unset               z

@@ -1,0 +1,111 @@
+echo 'Hello from .zshrc'
+
+# for testing the Inherit Env stuff
+# echo "Path?: $PATH"
+
+# Do I want to name these with the dot, instead
+# of following the default dotbot way? Setting
+# file associations for VS Code, bat, etc. is a pain.
+
+# Shouldn't have these set yet...
+# [ -z $HISTFILE ] && HISTFILE="$HOME/.zsh_history"
+HISTSIZE=1000
+SAVEHIST=1000
+
+# Set ZSH / History Options
+
+# Don't really do this. This is to (hopefully) keep
+# the .zsh_history file updated in VS Code
+# booo...didn't work
+# unsetopt histSaveByCopy
+
+setopt histNoStore
+setopt extendedHistory
+# setopt histFcntlLock ???
+
+# setopt histFindNoDups
+# setopt histSaveNoDups
+# setopt histExpireDupsFirst
+# setopt histIgnoreDups
+setopt histIgnoreAllDups
+
+
+# "setopt appendhistory" is the default
+# ...or really it's "unsetopt noappendhistory"
+# setopt noappendhistory
+
+# reversing the default because of incAppendHistory?
+unsetopt appendHistory
+
+# inc means incremental
+# setopt incAppendHistory
+setopt incAppendHistoryTime
+# setopt shareHistory
+
+
+
+
+# bindkey -e
+
+
+# Set Environment Variables (and other Surprises)
+# should this be in zshenv or something?
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
+
+
+# Create aliases
+# alias ls='ls -lAFh'
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
+alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
+
+# Load History into current shell (shareHistory alternative)
+alias lh='fc -RI'
+
+# Customize the prompt
+prompt='
+%1~ %L %# '
+
+# Add locations to the $path variable
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
+
+# Write handy functions
+# Create a new directory and enter it
+function mkcd() {
+  mkdir -p "$@" && cd "$_";
+}
+
+function exaf() {
+  exa $(find "$1" -name "*$2")
+}
+
+
+# Adjust History Settings
+# [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+# HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+# HISTFILE=${HISTFILE:-"$HOME/.zsh_history"} #???
+
+
+
+# Use ZSH plugins
+
+
+
+# TODO look into this
+export TIME_STYLE=long-iso
+
+
+# Bonus?
+# Get some syntax highlighing for man pages using bat
+# https://github.com/sharkdp/bat#man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
