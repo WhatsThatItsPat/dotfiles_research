@@ -9,6 +9,8 @@ brew "git"
 brew "antibody"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
 # User-friendly cURL replacement (command-line HTTP client)
