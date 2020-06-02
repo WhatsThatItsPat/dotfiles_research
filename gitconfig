@@ -1,3 +1,10 @@
 [user]
 	name = Patrick McDonald
 	email = 764290+WhatsThatItsPat@users.noreply.github.com
+	signingKey = ""
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false
