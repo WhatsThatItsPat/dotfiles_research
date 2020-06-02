@@ -14,9 +14,9 @@
     ~/.config/bat:
       create: true
       path: config/bat
-    ~/.ssh:
-      path: ~/Dropbox/dotfiles/ssh
-      ignore-missing: true
+#    ~/.ssh:
+#      path: ~/Dropbox/dotfiles/ssh
+#      ignore-missing: true
 
 #- create:
 #    - ~/Developer
