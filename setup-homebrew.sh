@@ -23,6 +23,8 @@ brew bundle --verbose
 
 
 # Post-Homebrew Items...better name?
+# This can be for app-related things that don't fit elsewhere. The iTerm stuff uses the defaults api so is good in macos_setup.
+
 # compaudit
 echo "fix any compaudit issues?"
 # https://docs.brew.sh/Shell-Completion
