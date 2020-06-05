@@ -53,7 +53,8 @@ Deactivate licenses:
     # Copy public key and add to github.com > Settings > SSH and GPG keys
     pbcopy < ~/.ssh/id_rsa.pub
 
-    # Test SSH connection, then verify fingerprint and username (https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
+    # Test SSH connection, then verify fingerprint and username
+    # https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection
     ssh -T git@github.com
 
     # Switch from HTTPS to SSH
