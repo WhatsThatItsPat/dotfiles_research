@@ -21,4 +21,20 @@ fi
 brew bundle --verbose
 
 
+
+# Post-Homebrew Items...better name?
+# compaudit
+echo "fix any compaudit issues?"
+# https://docs.brew.sh/Shell-Completion
+# chmod go-w "$(brew --prefix)/share"
+# compaudit | xargs chmod g-w
+
+# Put this in a conditional to see if xcodebuild exists?
+echo "Enter password to accept Xcode license"
+sudo xcodebuild -license accept
+
+echo "Installing VS Code Extentions"
+cat vscode_extensions | xargs -L 1 code --install-extension
+
+
 # should I have an exit here?
