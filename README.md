@@ -30,7 +30,7 @@ Deactivate licenses:
 5. Restart computer.
 6. Install Dropbox, login, setup, and allow to sync. Alfred and Mackup (Terminal and VS Code) depend on this.
 7. `mackup restore`, might want to do `--dry-run` first
-8. [Generate ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+8. [Generate ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), add to github, and switch remotes
 
     ```zsh
     # Generate SSH key in default location (~/.ssh/config)
@@ -63,19 +63,19 @@ Deactivate licenses:
 
 ### Manual Steps
 
-### Snappy App
+#### Snappy App
 
 1. `System Preferences > Keyboard > Shortcuts > Screenshots` and turn off the one for `cmd+shift+4`.
 2. In app preferences, switch "take snap" from `cmd+shift+2` (which conflicts with ScreenFlow) to `cmd+shift+4`.
 
-### Alfred
+#### Alfred
 
 1. `System Preferences > Keyboard > Shortcuts > Spotlight` and turn off the one for `cmd+space`.
 2. `Alfred Preferences > Advanced > Set preferences folder` and set to the one in Dropbox.
 
 
 
-### iTerm2
+#### iTerm2
 
 These will end up in macos_setup.zsh...leave for now:
 ```zsh
@@ -84,14 +84,14 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iter
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool true
 ```
 
-### Terminal App
+#### Terminal App
 
 no need to mention this...
 
 Need to do `mackup restore`. Terminal overwrites the symlink, so we have to do manual backups (if we really care about it).
 
 
-### VS Code
+#### VS Code
 
 No need to mention this. It will end up in a setup file.
 
