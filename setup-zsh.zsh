@@ -9,6 +9,9 @@ echo "\n~~~ Starting ZSH Setup ~~~\n"
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
   echo '/usr/local/bin/zsh already exists in /etc/shells'
 else
+  # echo "Enter password to add /usr/local/bin/zsh to /etc/shells"
+  # echo "Enter sudo password to edit /etc/shells"
+  echo "sudo password required to edit /etc/shells"
   echo '/usr/local/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 fi
 
@@ -16,6 +19,9 @@ fi
 if [ "$SHELL" = '/usr/local/bin/zsh' ]; then
   echo '$SHELL is already /usr/local/bin/zsh'
 else
+  # echo "Enter password to change login shell to /usr/local/bin/zsh"
+  # echo "Enter user password to change login shell"
+  echo "user password required to change login shell"
   chsh -s /usr/local/bin/zsh
 fi
 
