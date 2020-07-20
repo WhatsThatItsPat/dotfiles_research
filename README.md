@@ -1,5 +1,7 @@
 # dotfiles
 
+something to close #2
+
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
 I learned about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz), and so can you!
