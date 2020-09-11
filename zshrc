@@ -1,5 +1,5 @@
 echo 'Hello from .zshrc'
-# blah blah
+# blah blah blah
 
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
