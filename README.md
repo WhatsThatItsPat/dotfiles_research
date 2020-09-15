@@ -7,6 +7,7 @@ Change #4 local. Nothing important. I did a regular pull and should try rebase n
 test-webui-merge-2
 1st change
 2nd change, via webui
+4th change to make it similar to last time...I just did a pull/rebase (without setting it as default and it worked without creating a merge commit.)
 
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
