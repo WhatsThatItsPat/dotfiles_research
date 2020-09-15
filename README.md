@@ -4,6 +4,9 @@ Change #1 after creating a branch.
 Change #2 in webui.
 Change #4 local. Nothing important. I did a regular pull and should try rebase next time.
 
+test-webui-merge-2
+1st change
+
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
 I learned about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz), and so can you!
