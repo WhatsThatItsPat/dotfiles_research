@@ -6,6 +6,7 @@ Change #4 local. Nothing important. I did a regular pull and should try rebase n
 
 test-webui-merge-2
 1st change
+2nd change, via webui
 
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
