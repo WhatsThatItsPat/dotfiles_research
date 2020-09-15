@@ -1,5 +1,5 @@
 echo 'Hello from .zshrc'
-# blah blah blah
+# Change #3 in another file on local. Shouldn't be able to push until I pull.
 
 # Set Environment Variables (and other Surprises)
 # should HOMEBREW_CASK_OPTS be in zshenv or something?
