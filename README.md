@@ -1,6 +1,6 @@
 # dotfiles
 
-something to close #2
+Change #1 after creating a branch.
 
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
