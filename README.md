@@ -9,9 +9,7 @@ test-webui-merge-2
 2nd change, via webui
 4th change to make it similar to last time...I just did a pull/rebase (without setting it as default and it worked without creating a merge commit.)
 
-I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
-
-I learned about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz), and so can you!
+I'm learning a ton about [dotfiles, command line use, Homebrew, zsh, git, and more](http://dotfiles.eieio.xyz/) with the course [***Dotfiles from Start to Finish-ish***](http://dotfiles.eieio.xyz/) by [@EIEIOxyz](https://twitter.com/EIEIOxyz/), and you can too!
 
 ## Decommission Previous Computer (if possible)
 
